@@ -121,7 +121,7 @@ The program was tested against the GNU `wc` command using `test.txt`. Ensure tha
 
 ## Acknowledgments
 
-Inspired by the Unix Philosophy and `wc` utility. Special thanks to the [Coding Challenges Shared Solutions GitHub repo](https://github.com/) for fostering collaboration and learning.
+Inspired by the Unix Philosophy and `wc` utility. Special thanks to the [Coding Challenges Shared Solutions GitHub repo](https://github.com/CodingChallengesFYI) for fostering collaboration and learning.
 
 ## License
 
