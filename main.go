@@ -3,6 +3,7 @@ package main
 import (
 	countbyte "ccwc/countByte"
 	countlines "ccwc/countLines"
+	countwords "ccwc/countWords"
 	"fmt"
 	"os"
 )
@@ -25,5 +26,11 @@ func main() {
 			fmt.Printf("An error occurred: %v", err)
 		}
 		fmt.Print(lines, filePath)
+	} else if operation == "-w" {
+		words, err := countwords.CountWords(filePath)
+		if err != nil {
+			fmt.Printf("An error occurred: %v", err)
+		}
+		fmt.Print(words, filePath)
 	}
 }
