@@ -3,17 +3,18 @@ package countlines
 import (
 	"bufio"
 	"fmt"
-	"os"
+	"io"
+	// "os"
 )
 
-func CountLines(filePath string) (int, error) {
-	file, err := os.Open(filePath)
-	if err != nil {
-		return 0, fmt.Errorf("Error opening file: %v", err)
-	}
-	defer file.Close()
+func CountLines(filePath io.Reader) (int, error) {
+	// file, err := os.Open(filePath)
+	// if err != nil {
+	// 	return 0, fmt.Errorf("Error opening file: %v", err)
+	// }
+	// defer file.Close()
 	numLines := 0
-	input := bufio.NewScanner(file)
+	input := bufio.NewScanner(filePath)
 	for input.Scan() {
 		numLines++
 	}
